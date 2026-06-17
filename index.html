@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#0f0f0f;
+    color:#f5f5f5;
+    line-height:1.8;
+    padding:30px;
+}
+
+/* Section Titles */
+h1{
+    text-align:center;
+    color:#ffb347;
+    font-size:3rem;
+    margin-bottom:40px;
+    text-transform:uppercase;
+    letter-spacing:3px;
+}
+
+h2{
+    color:#ffb347;
+    background:linear-gradient(90deg,#1c1c1c,#2d2d2d);
+    padding:15px 25px;
+    border-left:6px solid #ff6b35;
+    border-radius:12px;
+    margin-top:40px;
+    margin-bottom:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.4);
+}
+
+/* Menu Container */
+dl{
+    background:#181818;
+    border-radius:15px;
+    padding:25px;
+    margin-bottom:35px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.5);
+}
+
+/* Dish Name */
+dt{
+    color:#ffffff;
+    font-size:1.2rem;
+    font-weight:600;
+    margin-top:20px;
+    position:relative;
+}
+
+dt::before{
+    content:"🍽";
+    margin-right:10px;
+}
+
+/* Description */
+dd{
+    color:#bdbdbd;
+    margin-left:35px;
+    margin-top:8px;
+    margin-bottom:15px;
+    border-bottom:1px solid #2e2e2e;
+    padding-bottom:15px;
+}
+
+/* Hover Effect */
+dt:hover{
+    color:#ffb347;
+    transition:0.3s;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#111;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#ff6b35;
+    border-radius:10px;
+}
+
+/* Mobile Responsive */
+@media(max-width:768px){
+
+    body{
+        padding:15px;
+    }
+
+    h1{
+        font-size:2.2rem;
+    }
+
+    h2{
+        font-size:1.3rem;
+    }
+
+    dt{
+        font-size:1rem;
+    }
+
+    dd{
+        margin-left:25px;
+        font-size:0.9rem;
+    }
+}
+</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>foodie Paradise</title>
+</head>
+
+<body>
+    <header><b><i>Foodie paradise</i></b> </header>
+    <h1>
+        <img src="restaranut banner.png" alt="foodie" width=100% height=500px>
+    </h1>
+    <menu>
+        <li><b>
+                <h1>Starters</h1>
+            </b></li>
+        <list>
+            <ul>
+                <li>Veg starters
+                    <dl>
+                        <dt>Paneer Tikka</dt>
+                        <dd>Chunks of paneer marinated with Indian spices and grilled in a tandoor. Average Price: ₹220
+                        </dd>
+
+                        <dt>Veg Spring Rolls</dt>
+                        <dd>Crispy rolls stuffed with fresh vegetables and served with spicy dip. Average Price: ₹180
+                        </dd>
+
+                        <dt>Crispy Corn</dt>
+                        <dd>Golden fried sweet corn tossed with spices and herbs. Average Price: ₹190</dd>
+
+                        <dt>Veg Manchurian</dt>
+                        <dd>Vegetable balls cooked in a flavorful Indo-Chinese sauce. Average Price: ₹210</dd>
+
+                        <dt>Hara Bhara Kebab</dt>
+                        <dd>Healthy kebabs made with spinach, peas, and potatoes. Average Price: ₹200</dd>
+
+                        <dt>Chilli Paneer</dt>
+                        <dd>Paneer cubes tossed with capsicum and spicy Chinese-style sauce. Average Price: ₹240</dd>
+
+                        <dt>Cheese Balls</dt>
+                        <dd>Crispy fried balls filled with melted cheese and herbs. Average Price: ₹210</dd>
+
+                        <dt>French Fries</dt>
+                        <dd>Classic crispy potato fries served with ketchup. Average Price: ₹150</dd>
+
+                        <dt>Honey Chilli Potato</dt>
+                        <dd>Crispy potato fingers coated with sweet and spicy honey chilli sauce. Average Price: ₹200
+                        </dd>
+
+                        <dt>Veg Seekh Kebab</dt>
+                        <dd>Mixed vegetable kebabs grilled with aromatic spices. Average Price: ₹230</dd>
+
+                    </dl>
+
+
+                </li>
+                <li>
+                    Non Veg
+                    <dl>
+                        <dt>Chicken Tikka</dt>
+                        <dd>Boneless chicken pieces marinated in spices and grilled to perfection. Average Price: ₹280
+                        </dd>
+
+                        <dt>Chicken Lollipop</dt>
+                        <dd>Juicy chicken wings coated in spicy batter and deep fried. Average Price: ₹260</dd>
+
+                        <dt>Crispy Chicken Wings</dt>
+                        <dd>Crunchy chicken wings served with a flavorful dipping sauce. Average Price: ₹290</dd>
+
+                        <dt>Chilli Chicken</dt>
+                        <dd>Popular Indo-Chinese chicken tossed in spicy and tangy sauce. Average Price: ₹270</dd>
+
+                        <dt>Tandoori Chicken</dt>
+                        <dd>Traditional chicken marinated with yogurt and spices, cooked in a tandoor. Average Price:
+                            ₹350</dd>
+
+                        <dt>Fish Fingers</dt>
+                        <dd>Crispy breaded fish strips served with tartar sauce. Average Price: ₹320</dd>
+
+                        <dt>Chicken Popcorn</dt>
+                        <dd>Bite-sized crispy chicken pieces perfect for snacking. Average Price: ₹230</dd>
+
+                        <dt>Garlic Butter Prawns</dt>
+                        <dd>Fresh prawns cooked in rich garlic butter sauce. Average Price: ₹420</dd>
+
+                        <dt>Chicken Seekh Kebab</dt>
+                        <dd>Minced chicken skewers seasoned with traditional Indian spices. Average Price: ₹300</dd>
+
+                        <dt>Drumsticks of Heaven</dt>
+                        <dd>Spicy and crispy chicken drumettes tossed in special sauce. Average Price: ₹290</dd>
+
+                    </dl>
+
+                </li>
+                <li>Fast food
+                    <dl>
+                        <dt>Garlic Bread</dt>
+                        <dd>Toasted bread topped with garlic butter and herbs. Average Price: ₹170</dd>
+
+                        <dt>Nachos with Cheese Dip</dt>
+                        <dd>Crispy tortilla chips served with creamy cheese dip. Average Price: ₹250</dd>
+
+                        <dt>Loaded Fries</dt>
+                        <dd>French fries topped with cheese, sauces, and seasonings. Average Price: ₹240</dd>
+
+                        <dt>Mozzarella Sticks</dt>
+                        <dd>Crunchy sticks filled with gooey mozzarella cheese. Average Price: ₹260</dd>
+
+                        <dt>Onion Rings</dt>
+                        <dd>Deep-fried onion slices coated in crispy batter. Average Price: ₹180</dd>
+
+                        <dt>Chicken Nuggets</dt>
+                        <dd>Golden fried chicken bites served with your favorite dip. Average Price: ₹220</dd>
+
+                        <dt>Mini Burgers (Sliders)</dt>
+                        <dd>Small juicy burgers packed with delicious fillings. Average Price: ₹280</dd>
+
+                        <dt>BBQ Wings</dt>
+                        <dd>Chicken wings glazed with smoky barbecue sauce. Average Price: ₹320</dd>
+
+                    </dl>
+                </li>
+            </ul>
+
+        </list>
+        <br>
+
+        <li><b>
+                <h1> course</h1>
+
+            </b></li>
+        <list>
+            <ul>
+                <li>Veg
+                    <dt>Paneer Butter Masala</dt>
+                    <dd>Soft paneer cubes cooked in a rich tomato and butter gravy. Average Price: ₹280</dd>
+
+                    <dt>Shahi Paneer</dt>
+                    <dd>Paneer simmered in a creamy cashew-based gravy with mild spices. Average Price: ₹290</dd>
+
+                    <dt>Kadai Paneer</dt>
+                    <dd>Paneer and capsicum cooked with aromatic Indian spices. Average Price: ₹300</dd>
+
+                    <dt>Dal Makhani</dt>
+                    <dd>Slow-cooked black lentils in a buttery and creamy gravy. Average Price: ₹250</dd>
+
+                    <dt>Mix Veg Curry</dt>
+                    <dd>Seasonal vegetables cooked in a flavorful onion-tomato gravy. Average Price: ₹240</dd>
+
+                    <dt>Palak Paneer</dt>
+                    <dd>Fresh spinach gravy combined with soft paneer cubes. Average Price: ₹280</dd>
+
+                    <dt>Malai Kofta</dt>
+                    <dd>Soft vegetable dumplings served in a creamy rich gravy. Average Price: ₹290</dd>
+
+                    <dt>Chole Masala</dt>
+                    <dd>Spicy chickpeas cooked in traditional Punjabi style. Average Price: ₹220</dd>
+
+                    </dl>
+                </li>
+                <li>Non veg
+
+                    <dl>
+
+                        <dt>Butter Chicken</dt>
+                        <dd>Tender chicken pieces cooked in a creamy tomato-based gravy. Average Price: ₹380</dd>
+
+                        <dt>Chicken Curry</dt>
+                        <dd>Traditional Indian chicken curry with aromatic spices. Average Price: ₹340</dd>
+
+                        <dt>Kadai Chicken</dt>
+                        <dd>Chicken cooked with onions, capsicum, and freshly ground spices. Average Price: ₹360
+                        </dd>
+
+                        <dt>Chicken Tikka Masala</dt>
+                        <dd>Grilled chicken pieces served in a rich spicy gravy. Average Price: ₹390</dd>
+
+                        <dt>Mutton Rogan Josh</dt>
+                        <dd>Slow-cooked mutton curry with Kashmiri spices. Average Price: ₹480</dd>
+
+                        <dt>Mutton Curry</dt>
+                        <dd>Tender mutton pieces cooked in traditional Indian gravy. Average Price: ₹450</dd>
+
+                        <dt>Fish Curry</dt>
+                        <dd>Fresh fish cooked in a spicy and tangy curry sauce. Average Price: ₹420</dd>
+
+                        <dt>Prawn Masala</dt>
+                        <dd>Juicy prawns prepared in a rich and flavorful masala gravy. Average Price: ₹500</dd>
+
+                    </dl>
+
+
+                </li>
+            </ul>
+        </list>
+
+        <li><b>
+                <h1>Beverages AND drinks</h1>
+            </b></li>
+        <list>
+            <dl>
+                <dt>Mineral Water</dt>
+                <dd>Refreshing bottled drinking water served chilled. Average Price: ₹30</dd>
+
+                <dt>Fresh Lime Soda</dt>
+                <dd>A refreshing blend of lime, soda, and a hint of sweetness. Average Price: ₹90</dd>
+
+                <dt>Cold Coffee</dt>
+                <dd>Chilled coffee blended with milk and ice cream for a creamy taste. Average Price: ₹160</dd>
+
+                <dt>Hot Coffee</dt>
+                <dd>Freshly brewed aromatic coffee served hot. Average Price: ₹120</dd>
+
+                <dt>Masala Tea</dt>
+                <dd>Traditional Indian tea infused with aromatic spices. Average Price: ₹80</dd>
+
+                <dt>Green Tea</dt>
+                <dd>A healthy and refreshing antioxidant-rich beverage. Average Price: ₹100</dd>
+
+                <dt>Fresh Orange Juice</dt>
+                <dd>Freshly squeezed orange juice packed with vitamin C. Average Price: ₹140</dd>
+
+                <dt>Watermelon Juice</dt>
+                <dd>Sweet and refreshing juice made from fresh watermelon. Average Price: ₹130</dd>
+
+                <dt>Mango Shake</dt>
+                <dd>Creamy milkshake prepared with fresh mango pulp. Average Price: ₹170</dd>
+
+                <dt>Banana Shake</dt>
+                <dd>Rich and nutritious milkshake made with ripe bananas. Average Price: ₹150</dd>
+
+                <dt>Chocolate Shake</dt>
+                <dd>Thick and creamy chocolate-flavored milkshake. Average Price: ₹180</dd>
+
+                <dt>Strawberry Shake</dt>
+                <dd>Sweet and refreshing strawberry milkshake topped with cream. Average Price: ₹180</dd>
+
+                <dt>Vanilla Milkshake</dt>
+                <dd>Smooth and creamy vanilla-flavored milkshake. Average Price: ₹170</dd>
+
+                <dt>Oreo Shake</dt>
+                <dd>Delicious milkshake blended with Oreo cookies and ice cream. Average Price: ₹210</dd>
+
+                <dt>Mojito (Mint Lime)</dt>
+                <dd>A cool and refreshing non-alcoholic drink with mint and lime. Average Price: ₹160</dd>
+
+                <dt>Blue Lagoon</dt>
+                <dd>A vibrant mocktail with citrus flavors and a refreshing taste. Average Price: ₹190</dd>
+
+                <dt>Virgin Mojito</dt>
+                <dd>Classic mint and lime cooler served with crushed ice. Average Price: ₹170</dd>
+
+                <dt>Fruit Punch</dt>
+                <dd>A colorful blend of mixed fruit juices served chilled. Average Price: ₹180</dd>
+
+                <dt>Coca-Cola</dt>
+                <dd>Classic carbonated soft drink served chilled. Average Price: ₹60</dd>
+
+                <dt>Pepsi</dt>
+                <dd>Refreshing cola beverage perfect with meals. Average Price: ₹60</dd>
+
+                <dt>Sprite</dt>
+                <dd>Lemon-lime flavored soft drink with a crisp taste. Average Price: ₹60</dd>
+
+                <dt>Fanta</dt>
+                <dd>Orange-flavored fizzy drink loved by all age groups. Average Price: ₹60</dd>
+
+                <dt>Red Bull</dt>
+                <dd>Popular energy drink that provides an instant energy boost. Average Price: ₹140</dd>
+
+                <dt>Chocolate Smoothie</dt>
+                <dd>Rich and creamy smoothie blended with chocolate and milk. Average Price: ₹220</dd>
+
+                <dt>Mixed Berry Smoothie</dt>
+                <dd>A healthy smoothie made with assorted berries and yogurt. Average Price: ₹240</dd>
+
+                <dt>Ice Lemon Tea</dt>
+                <dd>Refreshing tea infused with lemon and served over ice. Average Price: ₹140</dd>
+
+            </dl>
+        </list>
+    </menu>
+
+
+</body>
+
+</html>
