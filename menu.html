@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:
+    radial-gradient(circle at top left,#0f172a,transparent 40%),
+    radial-gradient(circle at bottom right,#111827,transparent 40%),
+    #050816;
+
+    color:#f5f5f5;
+    line-height:1.8;
+    padding:30px;
+    overflow-x:hidden;
+}
+
+/* Floating stars */
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+
+    background-image:
+    radial-gradient(white 1px,transparent 1px),
+    radial-gradient(#79cfff 1px,transparent 1px);
+
+    background-size:120px 120px,180px 180px;
+
+    opacity:.2;
+
+    animation:stars 25s linear infinite;
+}
+
+@keyframes stars{
+    from{
+        transform:translateY(0);
+    }
+    to{
+        transform:translateY(-300px);
+    }
+}
+
+/* Main headings */
+h1{
+    text-align:center;
+    color:white;
+    font-size:3rem;
+    letter-spacing:4px;
+    text-transform:uppercase;
+
+    text-shadow:
+    0 0 10px white,
+    0 0 20px #00c3ff,
+    0 0 40px #00c3ff;
+
+    animation:titleGlow 3s infinite alternate;
+}
+
+@keyframes titleGlow{
+
+    from{
+        text-shadow:
+        0 0 10px white,
+        0 0 20px #00c3ff;
+    }
+
+    to{
+        text-shadow:
+        0 0 20px white,
+        0 0 40px #00c3ff,
+        0 0 60px #4d7fff;
+    }
+}
+
+/* Menu cards */
+dl{
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:20px;
+
+    padding:25px;
+
+    margin-bottom:35px;
+
+    box-shadow:
+    0 10px 40px rgba(0,0,0,.6);
+}
+
+/* Dish names */
+dt{
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+    font-size:1.1rem;
+    font-weight:600;
+
+    margin-top:20px;
+
+    transition:.4s;
+}
+
+dt:hover{
+
+    color:#7ddcff;
+
+    transform:
+    translateX(10px)
+    scale(1.02);
+
+    text-shadow:
+    0 0 15px #00c3ff;
+}
+
+/* Descriptions */
+dd{
+    color:#bdbdbd;
+
+    margin-left:35px;
+
+    margin-top:8px;
+
+    margin-bottom:18px;
+
+    padding-bottom:15px;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+/* Gaming checkbox */
+input[type="checkbox"]{
+
+    appearance:none;
+
+    width:24px;
+    height:24px;
+
+    background:#111827;
+
+    border:2px solid #00c3ff;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    box-shadow:
+    0 0 10px rgba(0,195,255,.3);
+}
+
+input[type="checkbox"]:hover{
+
+    transform:scale(1.15);
+
+    box-shadow:
+    0 0 25px #00c3ff;
+}
+
+input[type="checkbox"]:checked{
+
+    background:
+    linear-gradient(135deg,#00c3ff,#4d7fff);
+
+    box-shadow:
+    0 0 20px #00c3ff,
+    0 0 40px #4d7fff;
+}
+
+/* Select */
+select{
+
+    background:#101827;
+
+    color:white;
+
+    border:2px solid #00c3ff;
+
+    border-radius:12px;
+
+    padding:6px 12px;
+
+    margin-left:15px;
+
+    transition:.3s;
+}
+
+select:hover{
+
+    box-shadow:
+    0 0 20px #00c3ff;
+}
+
+/* Button */
+input[type="submit"],
+button{
+
+    background:
+    linear-gradient(135deg,#00c3ff,#4d7fff);
+
+    color:white;
+
+    border:none;
+
+    padding:16px 40px;
+
+    border-radius:50px;
+
+    font-size:1rem;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    display:block;
+
+    margin:40px auto;
+
+    transition:.4s;
+}
+
+input[type="submit"]:hover,
+button:hover{
+
+    transform:scale(1.08);
+
+    box-shadow:
+    0 0 30px #00c3ff;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#0b1120;
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:
+    linear-gradient(#00c3ff,#4d7fff);
+
+    border-radius:20px;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+    body{
+        padding:15px;
+    }
+
+    h1{
+        font-size:2rem;
+    }
+
+    dt{
+        font-size:1rem;
+    }
+
+    dd{
+        font-size:.9rem;
+        margin-left:25px;
+    }
+}
+
+</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+
+        <a href="index.html">index</a>
+        <a href="order.html">order</a>
+        <a href="menu.html">menu</a>
+        <a href="about.html">about</a>
+
+    </nav>
+    <li><b>
+            <h1>Starters</h1>
+        </b></li>
+    <list>
+        <ul>
+            <li>Veg starters
+                <dl>
+
+                    <dt>
+                        <input type="checkbox" name="order" value="Paneer Tikka">
+                        Paneer Tikka
+                    </dt>
+                    <dd>
+                        Chunks of paneer marinated with Indian spices and grilled in a tandoor.
+                        Average Price: ₹220
+                    </dd>
+
+                    <dt>
+                        <input type="checkbox" name="order" value="Veg Spring Rolls">
+                        Veg Spring Rolls
+                    </dt>
+                    <dd>
+                        Crispy rolls stuffed with fresh vegetables and served with spicy dip.
+                        Average Price: ₹180
+                    </dd>
+
+                    <dt>
+                        <input type="checkbox" name="order" value="Crispy Corn">
+                        Crispy Corn
+                    </dt>
+                    <dd>
+                        Golden fried sweet corn tossed with spices and herbs.
+                        Average Price: ₹190
+                    </dd>
+
+                    <dt>
+                        <input type="checkbox" name="order" value="Veg Manchurian">
+                        Veg Manchurian
+                    </dt>
+                    <dd>
+                        Vegetable balls cooked in a flavorful Indo-Chinese sauce.
+                        Average Price: ₹210
+                    </dd>
+
+                    <dt>
+                        <input type="checkbox" name="order" value="Hara Bhara Kebab">
+                        Hara Bhara Kebab
+                    </dt>
+                    <dd>
+                        Healthy kebabs made with spinach, peas, and potatoes.
+                        Average Price: ₹200
+                    </dd>
+
+                    <dt>
+                        <input type="checkbox" name="order" value="Chilli Paneer">
+                        Chilli Paneer
+                    </dt>
+                    <dd>
+                        Paneer cubes tossed with capsicum and spicy Chinese-style sauce.
+                        Average Price: ₹240
+                    </dd>
+
+                    <dt>
+                        <input type="checkbox" name="order" value="Cheese Balls">
+                        Cheese Balls
+                    </dt>
+                    <dd>
+                        Crispy fried balls filled with melted cheese and herbs.
+                        Average Price: ₹210
+                    </dd>
+
+                    <dt>
+                        <input type="checkbox" name="order" value="French Fries">
+                        French Fries
+                    </dt>
+                    <dd>
+                        Classic crispy potato fries served with ketchup.
+                        Average Price: ₹150
+                    </dd>
+
+                    <dt>
+                        <input type="checkbox" name="order" value="Honey Chilli Potato">
+                        Honey Chilli Potato
+                    </dt>
+                    <dd>
+                        Crispy potato fingers coated with sweet and spicy honey chilli sauce.
+                        Average Price: ₹200
+                    </dd>
+
+                    <dt>
+                        <input type="checkbox" name="order" value="Veg Seekh Kebab">
+                        Veg Seekh Kebab
+                    </dt>
+                    <dd>
+                        Mixed vegetable kebabs grilled with aromatic spices.
+                        Average Price: ₹230
+                    </dd>
+
+                </dl>
+
+
+            </li>
+            <li>
+                Non Veg
+                <dl>
+
+                    <dt>
+                        <input type="checkbox" name="order" value="Chicken Tikka">
+                        Chicken Tikka
+                    </dt>
+                    <dd>
+                        Boneless chicken pieces marinated in spices and grilled to perfection.
+                        Average Price: ₹280
+                    </dd>
+
+                    <dt>
+                        <input type="checkbox" name="order" value="Chicken Lollipop">
+                        Chicken Lollipop
+                    </dt>
+                    <dd>
+                        Juicy chicken wings coated in spicy batter and deep fried.
+                        Average Price: ₹260
+                    </dd>
+
+                    <dt>
+                        <input type="checkbox" name="order" value="Crispy Chicken Wings">
+                        Crispy Chicken Wings
+                    </dt>
+                    <dd>
+                        Crunchy chicken wings served with a flavorful dipping sauce.
+                        Average Price: ₹290
+                    </dd>
+
+                    <dt>
+                        <input type="checkbox" name="order" value="Chilli Chicken">
+                        Chilli Chicken
+                    </dt>
+                    <dd>
+                        Popular Indo-Chinese chicken tossed in spicy and tangy sauce.
+                        Average Price: ₹270
+                    </dd>
+
+                    <dt>
+                        <input type="checkbox" name="order" value="Tandoori Chicken">
+                        Tandoori Chicken
+                    </dt>
+                    <dd>
+                        Traditional chicken marinated with yogurt and spices, cooked in a tandoor.
+                        Average Price: ₹350
+                    </dd>
+
+                    <dt>
+                        <input type="checkbox" name="order" value="Fish Fingers">
+                        Fish Fingers
+                    </dt>
+                    <dd>
+                        Crispy breaded fish strips served with tartar sauce.
+                        Average Price: ₹320
+                    </dd>
+
+                    <dt>
+                        <input type="checkbox" name="order" value="Chicken Popcorn">
+                        Chicken Popcorn
+                    </dt>
+                    <dd>
+                        Bite-sized crispy chicken pieces perfect for snacking.
+                        Average Price: ₹230
+                    </dd>
+
+                    <dt>
+                        <input type="checkbox" name="order" value="Garlic Butter Prawns">
+                        Garlic Butter Prawns
+                    </dt>
+                    <dd>
+                        Fresh prawns cooked in rich garlic butter sauce.
+                        Average Price: ₹420
+                    </dd>
+
+                    <dt>
+                        <input type="checkbox" name="order" value="Chicken Seekh Kebab">
+                        Chicken Seekh Kebab
+                    </dt>
+                    <dd>
+                        Minced chicken skewers seasoned with traditional Indian spices.
+                        Average Price: ₹300
+                    </dd>
+
+                    <dt>
+                        <input type="checkbox" name="order" value="Drumsticks of Heaven">
+                        Drumsticks of Heaven
+                    </dt>
+                    <dd>
+                        Spicy and crispy chicken drumettes tossed in special sauce.
+                        Average Price: ₹290
+                    </dd>
+
+                </dl>
+
+            </li>
+            <li>Fast food
+                <dl>
+
+                    <dt>
+                        <input type="checkbox" name="order" value="Garlic Bread">
+                        Garlic Bread
+                    </dt>
+                    <dd>
+                        Toasted bread topped with garlic butter and herbs.
+                        Average Price: ₹170
+                    </dd>
+
+                    <dt>
+                        <input type="checkbox" name="order" value="Nachos with Cheese Dip">
+                        Nachos with Cheese Dip
+                    </dt>
+                    <dd>
+                        Crispy tortilla chips served with creamy cheese dip.
+                        Average Price: ₹250
+                    </dd>
+
+                    <dt>
+                        <input type="checkbox" name="order" value="Loaded Fries">
+                        Loaded Fries
+                    </dt>
+                    <dd>
+                        French fries topped with cheese, sauces, and seasonings.
+                        Average Price: ₹240
+                    </dd>
+
+                    <dt>
+                        <input type="checkbox" name="order" value="Mozzarella Sticks">
+                        Mozzarella Sticks
+                    </dt>
+                    <dd>
+                        Crunchy sticks filled with gooey mozzarella cheese.
+                        Average Price: ₹260
+                    </dd>
+
+                    <dt>
+                        <input type="checkbox" name="order" value="Onion Rings">
+                        Onion Rings
+                    </dt>
+                    <dd>
+                        Deep-fried onion slices coated in crispy batter.
+                        Average Price: ₹180
+                    </dd>
+
+                    <dt>
+                        <input type="checkbox" name="order" value="Chicken Nuggets">
+                        Chicken Nuggets
+                    </dt>
+                    <dd>
+                        Golden fried chicken bites served with your favorite dip.
+                        Average Price: ₹220
+                    </dd>
+
+                    <dt>
+                        <input type="checkbox" name="order" value="Mini Burgers (Sliders)">
+                        Mini Burgers (Sliders)
+                    </dt>
+                    <dd>
+                        Small juicy burgers packed with delicious fillings.
+                        Average Price: ₹280
+                    </dd>
+
+                    <dt>
+                        <input type="checkbox" name="order" value="BBQ Wings">
+                        BBQ Wings
+                    </dt>
+                    <dd>
+                        Chicken wings glazed with smoky barbecue sauce.
+                        Average Price: ₹320
+                    </dd>
+
+                </dl>
+            </li>
+        </ul>
+
+    </list>
+    <br>
+
+    <li><b>
+            <h1> Main course</h1>
+
+        </b></li>
+    <list>
+        <ul>
+            <li>Veg
+                <dl>
+
+                    <dt>
+                        <input type="checkbox" name="order" value="Paneer Butter Masala">
+                        Paneer Butter Masala
+                    </dt>
+                    <dd>
+                        Soft paneer cubes cooked in a rich tomato and butter gravy.
+                        Average Price: ₹280
+                    </dd>
+
+                    <dt>
+                        <input type="checkbox" name="order" value="Shahi Paneer">
+                        Shahi Paneer
+                    </dt>
+                    <dd>
+                        Paneer simmered in a creamy cashew-based gravy with mild spices.
+                        Average Price: ₹290
+                    </dd>
+
+                    <dt>
+                        <input type="checkbox" name="order" value="Kadai Paneer">
+                        Kadai Paneer
+                    </dt>
+                    <dd>
+                        Paneer and capsicum cooked with aromatic Indian spices.
+                        Average Price: ₹300
+                    </dd>
+
+                    <dt>
+                        <input type="checkbox" name="order" value="Dal Makhani">
+                        Dal Makhani
+                    </dt>
+                    <dd>
+                        Slow-cooked black lentils in a buttery and creamy gravy.
+                        Average Price: ₹250
+                    </dd>
+
+                    <dt>
+                        <input type="checkbox" name="order" value="Mix Veg Curry">
+                        Mix Veg Curry
+                    </dt>
+                    <dd>
+                        Seasonal vegetables cooked in a flavorful onion-tomato gravy.
+                        Average Price: ₹240
+                    </dd>
+
+                    <dt>
+                        <input type="checkbox" name="order" value="Palak Paneer">
+                        Palak Paneer
+                    </dt>
+                    <dd>
+                        Fresh spinach gravy combined with soft paneer cubes.
+                        Average Price: ₹280
+                    </dd>
+
+                    <dt>
+                        <input type="checkbox" name="order" value="Malai Kofta">
+                        Malai Kofta
+                    </dt>
+                    <dd>
+                        Soft vegetable dumplings served in a creamy rich gravy.
+                        Average Price: ₹290
+                    </dd>
+
+                    <dt>
+                        <input type="checkbox" name="order" value="Chole Masala">
+                        Chole Masala
+                    </dt>
+                    <dd>
+                        Spicy chickpeas cooked in traditional Punjabi style.
+                        Average Price: ₹220
+                    </dd>
+
+                </dl>
+            <li>Non veg
+
+                <dl>
+
+                    <dt>
+                        <input type="checkbox" name="order" value="Butter Chicken">
+                        Butter Chicken
+                    </dt>
+                    <dd>
+                        Tender chicken pieces cooked in a creamy tomato-based gravy.
+                        Average Price: ₹380
+                    </dd>
+
+                    <dt>
+                        <input type="checkbox" name="order" value="Chicken Curry">
+                        Chicken Curry
+                    </dt>
+                    <dd>
+                        Traditional Indian chicken curry with aromatic spices.
+                        Average Price: ₹340
+                    </dd>
+
+                    <dt>
+                        <input type="checkbox" name="order" value="Kadai Chicken">
+                        Kadai Chicken
+                    </dt>
+                    <dd>
+                        Chicken cooked with onions, capsicum, and freshly ground spices.
+                        Average Price: ₹360
+                    </dd>
+
+                    <dt>
+                        <input type="checkbox" name="order" value="Chicken Tikka Masala">
+                        Chicken Tikka Masala
+                    </dt>
+                    <dd>
+                        Grilled chicken pieces served in a rich spicy gravy.
+                        Average Price: ₹390
+                    </dd>
+
+                    <dt>
+                        <input type="checkbox" name="order" value="Mutton Rogan Josh">
+                        Mutton Rogan Josh
+                    </dt>
+                    <dd>
+                        Slow-cooked mutton curry with Kashmiri spices.
+                        Average Price: ₹480
+                    </dd>
+
+                    <dt>
+                        <input type="checkbox" name="order" value="Mutton Curry">
+                        Mutton Curry
+                    </dt>
+                    <dd>
+                        Tender mutton pieces cooked in traditional Indian gravy.
+                        Average Price: ₹450
+                    </dd>
+
+                    <dt>
+                        <input type="checkbox" name="order" value="Fish Curry">
+                        Fish Curry
+                    </dt>
+                    <dd>
+                        Fresh fish cooked in a spicy and tangy curry sauce.
+                        Average Price: ₹420
+                    </dd>
+
+                    <dt>
+                        <input type="checkbox" name="order" value="Prawn Masala">
+                        Prawn Masala
+                    </dt>
+                    <dd>
+                        Juicy prawns prepared in a rich and flavorful masala gravy.
+                        Average Price: ₹500
+                    </dd>
+
+                </dl>
+
+
+            </li>
+        </ul>
+    </list>
+
+    <li><b>
+            <h1>Beverages AND drinks</h1>
+        </b></li>
+    <list>
+        <dl>
+
+            <dt><input type="checkbox" name="order" value="Mineral Water"> Mineral Water</dt>
+            <dd>Refreshing bottled drinking water served chilled. Average Price: ₹30</dd>
+
+            <dt><input type="checkbox" name="order" value="Fresh Lime Soda"> Fresh Lime Soda</dt>
+            <dd>A refreshing blend of lime, soda, and a hint of sweetness. Average Price: ₹90</dd>
+
+            <dt><input type="checkbox" name="order" value="Cold Coffee"> Cold Coffee</dt>
+            <dd>Chilled coffee blended with milk and ice cream for a creamy taste. Average Price: ₹160</dd>
+
+            <dt><input type="checkbox" name="order" value="Hot Coffee"> Hot Coffee</dt>
+            <dd>Freshly brewed aromatic coffee served hot. Average Price: ₹120</dd>
+
+            <dt><input type="checkbox" name="order" value="Masala Tea"> Masala Tea</dt>
+            <dd>Traditional Indian tea infused with aromatic spices. Average Price: ₹80</dd>
+
+            <dt><input type="checkbox" name="order" value="Green Tea"> Green Tea</dt>
+            <dd>A healthy and refreshing antioxidant-rich beverage. Average Price: ₹100</dd>
+
+            <dt><input type="checkbox" name="order" value="Fresh Orange Juice"> Fresh Orange Juice</dt>
+            <dd>Freshly squeezed orange juice packed with vitamin C. Average Price: ₹140</dd>
+
+            <dt><input type="checkbox" name="order" value="Watermelon Juice"> Watermelon Juice</dt>
+            <dd>Sweet and refreshing juice made from fresh watermelon. Average Price: ₹130</dd>
+
+            <dt><input type="checkbox" name="order" value="Mango Shake"> Mango Shake</dt>
+            <dd>Creamy milkshake prepared with fresh mango pulp. Average Price: ₹170</dd>
+
+            <dt><input type="checkbox" name="order" value="Banana Shake"> Banana Shake</dt>
+            <dd>Rich and nutritious milkshake made with ripe bananas. Average Price: ₹150</dd>
+
+            <dt><input type="checkbox" name="order" value="Chocolate Shake"> Chocolate Shake</dt>
+            <dd>Thick and creamy chocolate-flavored milkshake. Average Price: ₹180</dd>
+
+            <dt><input type="checkbox" name="order" value="Strawberry Shake"> Strawberry Shake</dt>
+            <dd>Sweet and refreshing strawberry milkshake topped with cream. Average Price: ₹180</dd>
+
+            <dt><input type="checkbox" name="order" value="Vanilla Milkshake"> Vanilla Milkshake</dt>
+            <dd>Smooth and creamy vanilla-flavored milkshake. Average Price: ₹170</dd>
+
+            <dt><input type="checkbox" name="order" value="Oreo Shake"> Oreo Shake</dt>
+            <dd>Delicious milkshake blended with Oreo cookies and ice cream. Average Price: ₹210</dd>
+
+            <dt><input type="checkbox" name="order" value="Mojito (Mint Lime)"> Mojito (Mint Lime)</dt>
+            <dd>A cool and refreshing non-alcoholic drink with mint and lime. Average Price: ₹160</dd>
+
+            <dt><input type="checkbox" name="order" value="Blue Lagoon"> Blue Lagoon</dt>
+            <dd>A vibrant mocktail with citrus flavors and a refreshing taste. Average Price: ₹190</dd>
+
+            <dt><input type="checkbox" name="order" value="Virgin Mojito"> Virgin Mojito</dt>
+            <dd>Classic mint and lime cooler served with crushed ice. Average Price: ₹170</dd>
+
+            <dt><input type="checkbox" name="order" value="Fruit Punch"> Fruit Punch</dt>
+            <dd>A colorful blend of mixed fruit juices served chilled. Average Price: ₹180</dd>
+
+            <dt><input type="checkbox" name="order" value="Coca-Cola"> Coca-Cola</dt>
+            <dd>Classic carbonated soft drink served chilled. Average Price: ₹60</dd>
+
+            <dt><input type="checkbox" name="order" value="Pepsi"> Pepsi</dt>
+            <dd>Refreshing cola beverage perfect with meals. Average Price: ₹60</dd>
+
+            <dt><input type="checkbox" name="order" value="Sprite"> Sprite</dt>
+            <dd>Lemon-lime flavored soft drink with a crisp taste. Average Price: ₹60</dd>
+
+            <dt><input type="checkbox" name="order" value="Fanta"> Fanta</dt>
+            <dd>Orange-flavored fizzy drink loved by all age groups. Average Price: ₹60</dd>
+
+            <dt><input type="checkbox" name="order" value="Red Bull"> Red Bull</dt>
+            <dd>Popular energy drink that provides an instant energy boost. Average Price: ₹140</dd>
+
+            <dt><input type="checkbox" name="order" value="Chocolate Smoothie"> Chocolate Smoothie</dt>
+            <dd>Rich and creamy smoothie blended with chocolate and milk. Average Price: ₹220</dd>
+
+            <dt><input type="checkbox" name="order" value="Mixed Berry Smoothie"> Mixed Berry Smoothie</dt>
+            <dd>A healthy smoothie made with assorted berries and yogurt. Average Price: ₹240</dd>
+
+            <dt><input type="checkbox" name="order" value="Ice Lemon Tea"> Ice Lemon Tea</dt>
+            <dd>Refreshing tea infused with lemon and served over ice. Average Price: ₹140</dd>
+
+        </dl>
+        <li>
+            <h1><b>Breads & Parathas</b></h1>
+            
+            <dl>
+
+                <dt>
+                    <input type="checkbox" name="order" value="Tandoori Roti">
+                    Tandoori Roti
+                    <select name="tandoori_roti_qty">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                    </select>
+                </dt>
+                <dd>Whole wheat bread cooked in a traditional tandoor oven. Average Price: ₹15</dd>
+
+                <dt>
+                    <input type="checkbox" name="order" value="Butter Roti">
+                    Butter Roti
+                    <select name="butter_roti_qty">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                    </select>
+                </dt>
+                <dd>Soft tandoori roti topped with melted butter. Average Price: ₹20</dd>
+
+                <dt>
+                    <input type="checkbox" name="order" value="Plain Naan">
+                    Plain Naan
+                    <select name="plain_naan_qty">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                    </select>
+                </dt>
+                <dd>Classic leavened bread baked in a tandoor. Average Price: ₹30</dd>
+
+                <dt>
+                    <input type="checkbox" name="order" value="Butter Naan">
+                    Butter Naan
+                    <select name="butter_naan_qty">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                    </select>
+                </dt>
+                <dd>Traditional naan brushed with rich butter. Average Price: ₹40</dd>
+
+                <dt>
+                    <input type="checkbox" name="order" value="Garlic Naan">
+                    Garlic Naan
+                    <select name="garlic_naan_qty">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                    </select>
+                </dt>
+                <dd>Soft naan flavored with garlic and fresh coriander. Average Price: ₹50</dd>
+
+                <dt>
+                    <input type="checkbox" name="order" value="Laccha Paratha">
+                    Laccha Paratha
+                    <select name="laccha_paratha_qty">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                    </select>
+                </dt>
+                <dd>Multi-layered flaky paratha with a crispy texture. Average Price: ₹40</dd>
+
+                <dt>
+                    <input type="checkbox" name="order" value="Aloo Paratha">
+                    Aloo Paratha
+                    <select name="aloo_paratha_qty">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                    </select>
+                </dt>
+                <dd>Stuffed with spiced mashed potatoes and herbs. Average Price: ₹50</dd>
+
+                <dt>
+                    <input type="checkbox" name="order" value="Paneer Paratha">
+                    Paneer Paratha
+                    <select name="paneer_paratha_qty">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                    </select>
+                </dt>
+                <dd>Filled with seasoned paneer and Indian spices. Average Price: ₹70</dd>
+
+                <dt>
+                    <input type="checkbox" name="order" value="Gobhi Paratha">
+                    Gobhi Paratha
+                    <select name="gobhi_paratha_qty">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                    </select>
+                </dt>
+                <dd>Paratha stuffed with spicy grated cauliflower filling. Average Price: ₹60</dd>
+
+                <dt>
+                    <input type="checkbox" name="order" value="Mixed Veg Paratha">
+                    Mixed Veg Paratha
+                    <select name="mixed_veg_paratha_qty">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                    </select>
+                </dt>
+                <dd>Stuffed with a delicious mixture of vegetables. Average Price: ₹70</dd>
+
+                <dt>
+                    <input type="checkbox" name="order" value="Methi Paratha">
+                    Methi Paratha
+                    <select name="methi_paratha_qty">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                    </select>
+                </dt>
+                <dd>Healthy whole wheat paratha made with fresh fenugreek leaves. Average Price: ₹40</dd>
+
+                <dt>
+                    <input type="checkbox" name="order" value="Missi Roti">
+                    Missi Roti
+                    <select name="missi_roti_qty">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                    </select>
+                </dt>
+                <dd>Punjabi flatbread prepared with gram flour and wheat flour. Average Price: ₹30</dd>
+
+                <dt>
+                    <input type="checkbox" name="order" value="Kulcha">
+                    Kulcha
+                    <select name="kulcha_qty">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                    </select>
+                </dt>
+                <dd>Soft leavened bread commonly served with chole. Average Price: ₹40</dd>
+
+                <dt>
+                    <input type="checkbox" name="order" value="Amritsari Kulcha">
+                    Amritsari Kulcha
+                    <select name="amritsari_kulcha_qty">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                    </select>
+                </dt>
+                <dd>Crispy stuffed kulcha with authentic Punjabi flavors. Average Price: ₹80</dd>
+
+                <dt>
+                    <input type="checkbox" name="order" value="Rumali Roti">
+                    Rumali Roti
+                    <select name="rumali_roti_qty">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                    </select>
+                </dt>
+                <dd>Thin and soft bread folded like a handkerchief. Average Price: ₹20</dd>
+
+            </dl>
+
+
+        </li>
+    </list>
+    </menu>
+</body>
+
+</html>
